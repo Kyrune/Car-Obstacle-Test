@@ -15,5 +15,9 @@ public class Delivery : MonoBehaviour
         {
             Debug.Log("Package picked up");
         }
+        if (other.tag == "Customer")
+        {
+            Debug.Log("Customer: Thanks!");
+        }
     }
 }
