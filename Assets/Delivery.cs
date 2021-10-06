@@ -11,6 +11,9 @@ public class Delivery : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) 
     {
-        Debug.Log("Triggggered");
+        if (other.tag == "Package")
+        {
+            Debug.Log("Package picked up");
+        }
     }
 }
