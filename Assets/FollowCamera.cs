@@ -5,6 +5,7 @@ using UnityEngine;
 public class FollowCamera : MonoBehaviour
 {
     // The camera's position is relative to the car's
+    [SerializeField] GameObject thingToFollow;
 
     // Update is called once per frame
     void Update()
