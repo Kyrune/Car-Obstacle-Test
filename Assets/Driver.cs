@@ -9,6 +9,10 @@ public class Driver : MonoBehaviour
     [SerializeField] float slowSpeed = 10f;
     [SerializeField] float boostSpeed = 30f;
 
+    void OnCollisionEnter2D(Collision2D other) 
+    {
+        moveSpeed = slowSpeed;
+    }
 
     void Update()
     {
